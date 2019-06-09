@@ -31,6 +31,7 @@
 		7663A21922ADA0F3006CE00B /* MortalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21822ADA0F3006CE00B /* MortalComponent.swift */; };
 		7663A21B22ADA161006CE00B /* AttackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21A22ADA161006CE00B /* AttackComponent.swift */; };
 		7663A21D22ADA490006CE00B /* Died.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7663A21C22ADA490006CE00B /* Died.sks */; };
+		7663A21F22ADA94D006CE00B /* DebugMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21E22ADA94D006CE00B /* DebugMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		7663A21822ADA0F3006CE00B /* MortalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortalComponent.swift; sourceTree = "<group>"; };
 		7663A21A22ADA161006CE00B /* AttackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackComponent.swift; sourceTree = "<group>"; };
 		7663A21C22ADA490006CE00B /* Died.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Died.sks; sourceTree = "<group>"; };
+		7663A21E22ADA94D006CE00B /* DebugMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				7653793C22AD8A6C00C6A90F /* Nodes */,
 				7653794122AD8E3A00C6A90F /* GameplayConfiguration.swift */,
 				7663A21222AD94F5006CE00B /* GameControlConfiguration.swift */,
+				7663A21E22ADA94D006CE00B /* DebugMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				7663A21722ADA060006CE00B /* Scene+PhysicsContactDelegate.swift in Sources */,
 				7653791822AD792A00C6A90F /* ViewController.swift in Sources */,
 				7653793622AD816800C6A90F /* String+Extensions.swift in Sources */,
+				7663A21F22ADA94D006CE00B /* DebugMode.swift in Sources */,
 				7653793A22AD889B00C6A90F /* UInt32+PhysicsMask.swift in Sources */,
 				7653793122AD7F1C00C6A90F /* RunHotel.swift in Sources */,
 				7653791622AD792A00C6A90F /* Scene.swift in Sources */,

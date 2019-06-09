@@ -36,13 +36,15 @@ class Slime: GKEntity {
 extension Slime {
     
     private func addNodeComponent(initialPosition position: CGPoint) {
-        let node = SKSpriteNode(imageNamed: "slime_walk_01")
+        let texture = SKTexture(imageNamed: "slime_walk_01")
+        let node = SKSpriteNode(texture: texture)
         node.name = .slimeNodeName
         node.position = position
         node.xScale = (-EnemyConfiguration.scaleFactor)
         node.yScale = EnemyConfiguration.scaleFactor
         
-        let physicBody = SKPhysicsBody(rectangleOf: node.size)
+        
+        let physicBody = SKPhysicsBody(circleOfRadius: node.size.width / 2.5)
         physicBody.affectedByGravity = true
         physicBody.allowsRotation = false
         
