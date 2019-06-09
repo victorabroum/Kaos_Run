@@ -20,6 +20,7 @@ class Scene: SKScene {
     override func didMove(to view: SKView) {
         // Setup your scene here
         entityManager = EntityManager(self)
+        physicsWorld.contactDelegate = self
     }
     
     override func update(_ currentTime: TimeInterval) {

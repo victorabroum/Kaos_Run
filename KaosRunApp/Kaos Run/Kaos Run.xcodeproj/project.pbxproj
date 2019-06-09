@@ -27,6 +27,9 @@
 		7663A21122AD91B0006CE00B /* Array+SKTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21022AD91B0006CE00B /* Array+SKTexture.swift */; };
 		7663A21322AD94F5006CE00B /* GameControlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21222AD94F5006CE00B /* GameControlConfiguration.swift */; };
 		7663A21522AD9735006CE00B /* MoveForwardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21422AD9735006CE00B /* MoveForwardComponent.swift */; };
+		7663A21722ADA060006CE00B /* Scene+PhysicsContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21622ADA060006CE00B /* Scene+PhysicsContactDelegate.swift */; };
+		7663A21922ADA0F3006CE00B /* MortalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21822ADA0F3006CE00B /* MortalComponent.swift */; };
+		7663A21B22ADA161006CE00B /* AttackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21A22ADA161006CE00B /* AttackComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		7663A21022AD91B0006CE00B /* Array+SKTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SKTexture.swift"; sourceTree = "<group>"; };
 		7663A21222AD94F5006CE00B /* GameControlConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlConfiguration.swift; sourceTree = "<group>"; };
 		7663A21422AD9735006CE00B /* MoveForwardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveForwardComponent.swift; sourceTree = "<group>"; };
+		7663A21622ADA060006CE00B /* Scene+PhysicsContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+PhysicsContactDelegate.swift"; sourceTree = "<group>"; };
+		7663A21822ADA0F3006CE00B /* MortalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortalComponent.swift; sourceTree = "<group>"; };
+		7663A21A22ADA161006CE00B /* AttackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 			children = (
 				7653793F22AD8CDF00C6A90F /* JumpComponent.swift */,
 				7663A21422AD9735006CE00B /* MoveForwardComponent.swift */,
+				7663A21822ADA0F3006CE00B /* MortalComponent.swift */,
+				7663A21A22ADA161006CE00B /* AttackComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			children = (
 				7653791322AD792A00C6A90F /* Scene.sks */,
 				7653791522AD792A00C6A90F /* Scene.swift */,
+				7663A21622ADA060006CE00B /* Scene+PhysicsContactDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7663A21722ADA060006CE00B /* Scene+PhysicsContactDelegate.swift in Sources */,
 				7653791822AD792A00C6A90F /* ViewController.swift in Sources */,
 				7653793622AD816800C6A90F /* String+Extensions.swift in Sources */,
 				7653793A22AD889B00C6A90F /* UInt32+PhysicsMask.swift in Sources */,
@@ -270,12 +280,14 @@
 				7653794222AD8E3A00C6A90F /* GameplayConfiguration.swift in Sources */,
 				7663A20F22AD90C1006CE00B /* Slime.swift in Sources */,
 				7653794022AD8CDF00C6A90F /* JumpComponent.swift in Sources */,
+				7663A21B22ADA161006CE00B /* AttackComponent.swift in Sources */,
 				7663A21322AD94F5006CE00B /* GameControlConfiguration.swift in Sources */,
 				7663A21522AD9735006CE00B /* MoveForwardComponent.swift in Sources */,
 				7653792A22AD7D1E00C6A90F /* EntityManager.swift in Sources */,
 				7653793322AD7F5E00C6A90F /* Player.swift in Sources */,
 				7663A21122AD91B0006CE00B /* Array+SKTexture.swift in Sources */,
 				7653793E22AD8A7400C6A90F /* FloorNode.swift in Sources */,
+				7663A21922ADA0F3006CE00B /* MortalComponent.swift in Sources */,
 				7653791222AD792A00C6A90F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

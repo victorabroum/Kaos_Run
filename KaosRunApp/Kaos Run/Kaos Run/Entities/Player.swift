@@ -20,6 +20,9 @@ class Player: GKEntity {
         // Add Jump Component
         addComponent(JumpComponent(impulse: PlayerConfiguration.impulse))
         
+        // Add mortal component, to mark player with mortable entity
+        addComponent(MortalComponent())
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

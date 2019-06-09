@@ -17,6 +17,8 @@ class Slime: GKEntity {
         addNodeComponent(initialPosition: position)
         
         addComponent(MoveForwardComponent(velocity: EnemyConfiguration.velocity))
+        
+        addComponent(AttackComponent())
     }
     
     required init?(coder aDecoder: NSCoder) {
