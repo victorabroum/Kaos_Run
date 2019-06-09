@@ -15,6 +15,8 @@ class Scene: SKScene {
     var initialAnchor: ARAnchor!
     var entityManager: EntityManager!
     
+    var lastUpdateTime: TimeInterval = 0.0
+    
     override func didMove(to view: SKView) {
         // Setup your scene here
         entityManager = EntityManager(self)
@@ -22,6 +24,23 @@ class Scene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        
+        super.update(currentTime)
+        
+        // Initialize _lastUpdateTime if it has not already been
+        if self.lastUpdateTime == 0 {
+            self.lastUpdateTime = currentTime
+        }
+        
+        // Calculate time since last update
+        let deltaTime = currentTime - self.lastUpdateTime
+        
+        self.entityManager.update(deltaTime)
+        
+        if GameControlConfiguration.isPlaying && CACurrentMediaTime() - lastUpdateTime > EnemyConfiguration.spawnTime {
+            lastUpdateTime = CACurrentMediaTime()
+            entityManager.spawnSlime(onPosition: EnemyConfiguration.spawPoint)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -33,6 +52,7 @@ class Scene: SKScene {
             } else {
                 entityManager.add(Player())
             }
+            GameControlConfiguration.isPlaying = true
             return
         }
         createWorld()

@@ -11,12 +11,14 @@ import SpriteKit
 
 extension UInt32 {
     static let base: UInt32 = 0b1
-    static let player = UInt32.base << 0
-    static let floor = UInt32.base << 1
+    static let player   = UInt32.base << 0
+    static let floor    = UInt32.base << 1
+    static let slime    = UInt32.base << 2
     
     static let allMasks: [UInt32] = [
         UInt32.player,
-        UInt32.floor
+        UInt32.floor,
+        UInt32.slime
     ]
     
     static func contactWithAllCategories(less: [UInt32] = []) -> UInt32 {

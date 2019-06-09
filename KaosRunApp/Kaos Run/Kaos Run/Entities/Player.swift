@@ -38,12 +38,15 @@ class Player: GKEntity {
 extension Player {
     
     private func addNodeComponent() {
-        let node = SKSpriteNode(texture: nil, color: .green, size: CGSize(width: 5, height: 5))
+        let node = SKSpriteNode(imageNamed: "blue_starff_walk_01")
+        node.xScale = PlayerConfiguration.scaleFactor
+        node.yScale = PlayerConfiguration.scaleFactor
         node.position = .zero
         node.name = "playerNode"
         
         let physicBody = SKPhysicsBody(rectangleOf: node.size)
         physicBody.affectedByGravity = true
+        physicBody.allowsRotation = false
         physicBody.categoryBitMask = .player
         physicBody.collisionBitMask = .contactWithAllCategories()
         physicBody.contactTestBitMask = ~(.contactWithAllCategories(less:[.floor]))
@@ -51,5 +54,7 @@ extension Player {
         node.physicsBody = physicBody
         
         addComponent(GKSKNodeComponent(node: node))
+        
+        node.run(SKAction.repeatForever(SKAction.animate(with: .playerWalk, timePerFrame: 0.08)))
     }
 }
