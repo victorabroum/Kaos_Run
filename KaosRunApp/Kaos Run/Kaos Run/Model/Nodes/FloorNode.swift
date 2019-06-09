@@ -14,7 +14,7 @@ class FloorNode: SKNode {
     override init() {
         super.init()
         
-        let floorNode = SKSpriteNode(texture: nil, color: .brown, size: CGSize(width: 80, height: 10))
+        let floorNode = SKSpriteNode(texture: nil, color: .brown, size: CGSize(width: 160, height: 10))
         floorNode.position = CGPoint(x: 0, y: -5)
         floorNode.name = .floorNodeName
         
@@ -30,6 +30,12 @@ class FloorNode: SKNode {
         floorNode.physicsBody = physicsBody
         
         self.addChild(floorNode)
+        
+        // Add Spawn Point on Floor
+        let spawnPoint = SKNode()
+        spawnPoint.name = .spawnPointNodeName
+        spawnPoint.position = CGPoint(x: 35, y: 10)
+        floorNode.addChild(spawnPoint)
     }
     
     required init?(coder aDecoder: NSCoder) {

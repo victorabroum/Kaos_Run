@@ -11,6 +11,7 @@ import GameplayKit
 
 class JumpComponent: GKComponent {
     var impulse: CGVector
+    private(set) var isJumping: Bool = false
     
     init(impulse: CGVector) {
         self.impulse = impulse

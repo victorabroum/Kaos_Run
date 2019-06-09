@@ -24,7 +24,8 @@ class EntityManager {
     /// All components systems
     // Insert any entity that needs updating here as a GKComponentSystem
     lazy private var componentSystems: [GKComponentSystem] = {
-        return [ ]
+        let moveForwardSystem = GKComponentSystem(componentClass: MoveForwardComponent.self)
+        return [ moveForwardSystem ]
     }()
     
     
@@ -81,6 +82,11 @@ class EntityManager {
             entities.remove(currentRemove)
         }
         toRemove.removeAll()
+    }
+    
+    public func spawnSlime(onPosition position: CGPoint) {
+        let slime = Slime(initialPosition: position)
+        self.add(slime)
     }
 
 }

@@ -13,5 +13,7 @@ extension String {
     static let worldNodeName = "worldNode"
     static let playerNodeName = "playerNode"
     static let floorNodeName = "floorNode"
+    static let slimeNodeName = "slimeNode"
+    static let spawnPointNodeName = "spawPointNode"
     
 }
