@@ -16,10 +16,12 @@ extension Scene: SKPhysicsContactDelegate {
         
         if let _ = entityA.component(ofType: AttackComponent.self), let _ = entityB.component(ofType: MortalComponent.self) {
             print("Player perdeu! A")
+            gameLost()
         }
         
         if let _ = entityB.component(ofType: AttackComponent.self), let _ = entityA.component(ofType: MortalComponent.self) {
             print("Player perdeu! B")
+            gameLost()
         }
         
     }

@@ -10,4 +10,5 @@ import Foundation
 
 struct GameControlConfiguration {
     static var isPlaying = false
+    static var hasFinishedGame = false
 }

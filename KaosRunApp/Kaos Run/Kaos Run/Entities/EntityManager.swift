@@ -88,5 +88,26 @@ class EntityManager {
         let slime = Slime(initialPosition: position)
         self.add(slime)
     }
+    
+    public func getPlayer() -> GKEntity? {
+        for entity in entities {
+            if entity is Player { return entity}
+        }
+        
+        return nil
+    }
+    
+    public func pause() {
+        for entity in entities {
+            
+            if let node = entity.component(ofType: GKSKNodeComponent.self)?.node {
+                node.removeAllActions()
+            }
+            
+            if entity.component(ofType: MoveForwardComponent.self) != nil {
+                entity.removeComponent(ofType: MoveForwardComponent.self)
+            }
+        }
+    }
 
 }

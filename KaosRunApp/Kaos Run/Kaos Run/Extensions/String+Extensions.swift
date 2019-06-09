@@ -15,5 +15,5 @@ extension String {
     static let floorNodeName = "floorNode"
     static let slimeNodeName = "slimeNode"
     static let spawnPointNodeName = "spawPointNode"
-    
+    static let labelLostNodeName = "labelLostNode"
 }

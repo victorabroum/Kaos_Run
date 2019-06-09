@@ -25,6 +25,12 @@ class Slime: GKEntity {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        if let node = self.component(ofType: GKSKNodeComponent.self)?.node {
+            node.removeFromParent()
+        }
+    }
+    
 }
 
 extension Slime {

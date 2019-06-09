@@ -30,6 +30,7 @@
 		7663A21722ADA060006CE00B /* Scene+PhysicsContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21622ADA060006CE00B /* Scene+PhysicsContactDelegate.swift */; };
 		7663A21922ADA0F3006CE00B /* MortalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21822ADA0F3006CE00B /* MortalComponent.swift */; };
 		7663A21B22ADA161006CE00B /* AttackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663A21A22ADA161006CE00B /* AttackComponent.swift */; };
+		7663A21D22ADA490006CE00B /* Died.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7663A21C22ADA490006CE00B /* Died.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		7663A21622ADA060006CE00B /* Scene+PhysicsContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+PhysicsContactDelegate.swift"; sourceTree = "<group>"; };
 		7663A21822ADA0F3006CE00B /* MortalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortalComponent.swift; sourceTree = "<group>"; };
 		7663A21A22ADA161006CE00B /* AttackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackComponent.swift; sourceTree = "<group>"; };
+		7663A21C22ADA490006CE00B /* Died.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Died.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				7653791922AD792A00C6A90F /* Main.storyboard */,
 				7653791C22AD792B00C6A90F /* Assets.xcassets */,
 				7653791E22AD792B00C6A90F /* LaunchScreen.storyboard */,
+				7663A21C22ADA490006CE00B /* Died.sks */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				7653791422AD792A00C6A90F /* Scene.sks in Resources */,
 				7653792022AD792B00C6A90F /* LaunchScreen.storyboard in Resources */,
 				7653791D22AD792B00C6A90F /* Assets.xcassets in Resources */,
+				7663A21D22ADA490006CE00B /* Died.sks in Resources */,
 				7653793822AD837B00C6A90F /* RunHotel.sks in Resources */,
 				7653791B22AD792A00C6A90F /* Main.storyboard in Resources */,
 			);

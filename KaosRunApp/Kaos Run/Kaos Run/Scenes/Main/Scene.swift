@@ -46,18 +46,21 @@ class Scene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        if GameControlConfiguration.hasFinishedGame {
+            resetGame()
+        }
+        
         if let worldNode = childNode(withName: .worldNodeName) {
             if let playerJumpComponent = worldNode.childNode(withName: .playerNodeName)?
                 .entity?.component(ofType: JumpComponent.self) {
                 playerJumpComponent.doJump()
             } else {
                 entityManager.add(Player())
+                GameControlConfiguration.isPlaying = true
             }
-            GameControlConfiguration.isPlaying = true
             return
         }
         createWorld()
-        
     }
 }
 
@@ -78,6 +81,47 @@ extension Scene {
             // Add a new anchor to the session
             initialAnchor = ARAnchor(transform: transform)
             sceneView.session.add(anchor: initialAnchor)
+        }
+    }
+    
+    func gameLost() {
+        entityManager.pause()
+        GameControlConfiguration.isPlaying = false
+        guard let player = entityManager.getPlayer() else { return }
+        guard let node = player.component(ofType: GKSKNodeComponent.self)?.node else { return }
+        
+        if let particle = SKEmitterNode(fileNamed: "Died") {
+            node.addChild(particle)
+        }
+        
+        appearLabelLost()
+    }
+    
+    func appearLabelLost() {
+        guard let worldNode = childNode(withName: .worldNodeName) else { return }
+        
+        guard worldNode.childNode(withName: .labelLostNodeName) == nil else { return }
+        
+        let labelLost = SKLabelNode(text: "YOU LOST 😱")
+        labelLost.name = .labelLostNodeName
+        labelLost.xScale = 0.3
+        labelLost.yScale = 0.3
+        labelLost.position.y = 100
+        
+        labelLost.run(SKAction.moveTo(y: 20, duration: 1.5)) {
+            GameControlConfiguration.hasFinishedGame = true
+        }
+        
+        worldNode.addChild(labelLost)
+    }
+    
+    func resetGame() {
+        entityManager.removeAll()
+        GameControlConfiguration.hasFinishedGame = false
+        
+        guard let worldNode = childNode(withName: .worldNodeName) else { return }
+        if let node = worldNode.childNode(withName: .labelLostNodeName) {
+            node.removeFromParent()
         }
     }
 }
