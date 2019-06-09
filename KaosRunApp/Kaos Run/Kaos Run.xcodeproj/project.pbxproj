@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7653791222AD792A00C6A90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653791122AD792A00C6A90F /* AppDelegate.swift */; };
+		7653791422AD792A00C6A90F /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7653791322AD792A00C6A90F /* Scene.sks */; };
+		7653791622AD792A00C6A90F /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653791522AD792A00C6A90F /* Scene.swift */; };
+		7653791822AD792A00C6A90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653791722AD792A00C6A90F /* ViewController.swift */; };
+		7653791B22AD792A00C6A90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7653791922AD792A00C6A90F /* Main.storyboard */; };
+		7653791D22AD792B00C6A90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7653791C22AD792B00C6A90F /* Assets.xcassets */; };
+		7653792022AD792B00C6A90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7653791E22AD792B00C6A90F /* LaunchScreen.storyboard */; };
+		7653792A22AD7D1E00C6A90F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653792922AD7D1E00C6A90F /* EntityManager.swift */; };
+		7653793122AD7F1C00C6A90F /* RunHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793022AD7F1C00C6A90F /* RunHotel.swift */; };
+		7653793322AD7F5E00C6A90F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793222AD7F5E00C6A90F /* Player.swift */; };
+		7653793622AD816800C6A90F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793522AD816800C6A90F /* String+Extensions.swift */; };
+		7653793822AD837B00C6A90F /* RunHotel.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7653793722AD837B00C6A90F /* RunHotel.sks */; };
+		7653793A22AD889B00C6A90F /* UInt32+PhysicsMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793922AD889B00C6A90F /* UInt32+PhysicsMask.swift */; };
+		7653793E22AD8A7400C6A90F /* FloorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793D22AD8A7400C6A90F /* FloorNode.swift */; };
+		7653794022AD8CDF00C6A90F /* JumpComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653793F22AD8CDF00C6A90F /* JumpComponent.swift */; };
+		7653794222AD8E3A00C6A90F /* GameplayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653794122AD8E3A00C6A90F /* GameplayConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7653790E22AD792A00C6A90F /* Kaos Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaos Run.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7653791122AD792A00C6A90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7653791322AD792A00C6A90F /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		7653791522AD792A00C6A90F /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		7653791722AD792A00C6A90F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7653791A22AD792A00C6A90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7653791C22AD792B00C6A90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7653791F22AD792B00C6A90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7653792122AD792B00C6A90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7653792922AD7D1E00C6A90F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		7653793022AD7F1C00C6A90F /* RunHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunHotel.swift; sourceTree = "<group>"; };
+		7653793222AD7F5E00C6A90F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7653793522AD816800C6A90F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7653793722AD837B00C6A90F /* RunHotel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RunHotel.sks; sourceTree = "<group>"; };
+		7653793922AD889B00C6A90F /* UInt32+PhysicsMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+PhysicsMask.swift"; sourceTree = "<group>"; };
+		7653793D22AD8A7400C6A90F /* FloorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorNode.swift; sourceTree = "<group>"; };
+		7653793F22AD8CDF00C6A90F /* JumpComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpComponent.swift; sourceTree = "<group>"; };
+		7653794122AD8E3A00C6A90F /* GameplayConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayConfiguration.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7653790B22AD792A00C6A90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7653790522AD792A00C6A90F = {
+			isa = PBXGroup;
+			children = (
+				7653791022AD792A00C6A90F /* Kaos Run */,
+				7653790F22AD792A00C6A90F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7653790F22AD792A00C6A90F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7653790E22AD792A00C6A90F /* Kaos Run.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7653791022AD792A00C6A90F /* Kaos Run */ = {
+			isa = PBXGroup;
+			children = (
+				7653793B22AD8A6500C6A90F /* Model */,
+				7653793422AD815D00C6A90F /* Extensions */,
+				7653792822AD7CD100C6A90F /* Components */,
+				7653792722AD7CC200C6A90F /* Entities */,
+				7653792B22AD7E7600C6A90F /* Controller */,
+				7653792C22AD7E8700C6A90F /* Scenes */,
+				7653792E22AD7EA100C6A90F /* View */,
+				7653792122AD792B00C6A90F /* Info.plist */,
+			);
+			path = "Kaos Run";
+			sourceTree = "<group>";
+		};
+		7653792722AD7CC200C6A90F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7653792922AD7D1E00C6A90F /* EntityManager.swift */,
+				7653793222AD7F5E00C6A90F /* Player.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7653792822AD7CD100C6A90F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7653793F22AD8CDF00C6A90F /* JumpComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7653792B22AD7E7600C6A90F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7653791722AD792A00C6A90F /* ViewController.swift */,
+				7653791122AD792A00C6A90F /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7653792C22AD7E8700C6A90F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7653792F22AD7EF200C6A90F /* RunHotel */,
+				7653792D22AD7E9100C6A90F /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7653792D22AD7E9100C6A90F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7653791322AD792A00C6A90F /* Scene.sks */,
+				7653791522AD792A00C6A90F /* Scene.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7653792E22AD7EA100C6A90F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7653791922AD792A00C6A90F /* Main.storyboard */,
+				7653791C22AD792B00C6A90F /* Assets.xcassets */,
+				7653791E22AD792B00C6A90F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7653792F22AD7EF200C6A90F /* RunHotel */ = {
+			isa = PBXGroup;
+			children = (
+				7653793022AD7F1C00C6A90F /* RunHotel.swift */,
+				7653793722AD837B00C6A90F /* RunHotel.sks */,
+			);
+			path = RunHotel;
+			sourceTree = "<group>";
+		};
+		7653793422AD815D00C6A90F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7653793522AD816800C6A90F /* String+Extensions.swift */,
+				7653793922AD889B00C6A90F /* UInt32+PhysicsMask.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7653793B22AD8A6500C6A90F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7653793C22AD8A6C00C6A90F /* Nodes */,
+				7653794122AD8E3A00C6A90F /* GameplayConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7653793C22AD8A6C00C6A90F /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				7653793D22AD8A7400C6A90F /* FloorNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7653790D22AD792A00C6A90F /* Kaos Run */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7653792422AD792B00C6A90F /* Build configuration list for PBXNativeTarget "Kaos Run" */;
+			buildPhases = (
+				7653790A22AD792A00C6A90F /* Sources */,
+				7653790B22AD792A00C6A90F /* Frameworks */,
+				7653790C22AD792A00C6A90F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaos Run";
+			productName = "Kaos Run";
+			productReference = 7653790E22AD792A00C6A90F /* Kaos Run.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7653790622AD792A00C6A90F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "FF Studios";
+				TargetAttributes = {
+					7653790D22AD792A00C6A90F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7653790922AD792A00C6A90F /* Build configuration list for PBXProject "Kaos Run" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7653790522AD792A00C6A90F;
+			productRefGroup = 7653790F22AD792A00C6A90F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7653790D22AD792A00C6A90F /* Kaos Run */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7653790C22AD792A00C6A90F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7653791422AD792A00C6A90F /* Scene.sks in Resources */,
+				7653792022AD792B00C6A90F /* LaunchScreen.storyboard in Resources */,
+				7653791D22AD792B00C6A90F /* Assets.xcassets in Resources */,
+				7653793822AD837B00C6A90F /* RunHotel.sks in Resources */,
+				7653791B22AD792A00C6A90F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7653790A22AD792A00C6A90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7653791822AD792A00C6A90F /* ViewController.swift in Sources */,
+				7653793622AD816800C6A90F /* String+Extensions.swift in Sources */,
+				7653793A22AD889B00C6A90F /* UInt32+PhysicsMask.swift in Sources */,
+				7653793122AD7F1C00C6A90F /* RunHotel.swift in Sources */,
+				7653791622AD792A00C6A90F /* Scene.swift in Sources */,
+				7653794222AD8E3A00C6A90F /* GameplayConfiguration.swift in Sources */,
+				7653794022AD8CDF00C6A90F /* JumpComponent.swift in Sources */,
+				7653792A22AD7D1E00C6A90F /* EntityManager.swift in Sources */,
+				7653793322AD7F5E00C6A90F /* Player.swift in Sources */,
+				7653793E22AD8A7400C6A90F /* FloorNode.swift in Sources */,
+				7653791222AD792A00C6A90F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7653791922AD792A00C6A90F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7653791A22AD792A00C6A90F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7653791E22AD792B00C6A90F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7653791F22AD792B00C6A90F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7653792222AD792B00C6A90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7653792322AD792B00C6A90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7653792522AD792B00C6A90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYH9NYMQ3Y;
+				INFOPLIST_FILE = "Kaos Run/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ffStudios.Kaos-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7653792622AD792B00C6A90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYH9NYMQ3Y;
+				INFOPLIST_FILE = "Kaos Run/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ffStudios.Kaos-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7653790922AD792A00C6A90F /* Build configuration list for PBXProject "Kaos Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7653792222AD792B00C6A90F /* Debug */,
+				7653792322AD792B00C6A90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7653792422AD792B00C6A90F /* Build configuration list for PBXNativeTarget "Kaos Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7653792522AD792B00C6A90F /* Debug */,
+				7653792622AD792B00C6A90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7653790622AD792A00C6A90F /* Project object */;
+}
